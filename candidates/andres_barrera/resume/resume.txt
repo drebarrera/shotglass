@@ -1,0 +1,76 @@
+ANDRES BARRERA
+Phone: +1(210) 585-6270
+Email: drebarrera@yahoo.com
+Location: Austin, Texas, United States
+
+Website Portfolio: www.drebarrera.com
+LinkedIn: www.linkedin.com/in/drebarrera/
+GitHub: www.github.com/drebarrera
+
+EDUCATION
+Bachelors of Science in Engineering, Computer Engineering
+Purdue University | 2022
+Relevant Coursework:
+- Data Structures
+- Introduction to Artificial Intelligence
+- Object-Oriented Programming in C++ and Java
+- Software for Embedded Systems
+
+WORK EXPERIENCE
+User Interface Designer
+Developing interactive panoramic virtual tour and frontend website content with HTML, CSS, JavaScript, and Kuula. | Colorado Springs, CO, United States (Remote)
+August 2021 - Current
+- Designing interactive panoramic virtual tour and frontend website content with HTML, CSS, JavaScript, and Kuula.
+- Developed a client-communication interface with HTML/CSS frontend and JavaScript/PHP backend.
+- Redesigned the company website using the Wix Development platform and Wix Velo script.
+
+Junior Software Engineer
+Fathom5 | Austin, Texas, USA (Remote)
+August 2022 - December 2022
+- Developing and researching software solutions for Industry 4.0 technology in an Agile framework environment.
+- Programmed Python software to mathematically analyze profile-shifted gear systems and predict gear interference events.
+- Wrote and maintained code and documentation in Git project repositories.
+
+Software Engineer Intern
+Fathom5 | Austin, Texas, USA
+June 2022 - August 2022
+- Developed software solutions for implementing and assessing microcontroller-based hardware and C/C++ software.
+- Created UI interfaces for live hardware verification with HTML/CSS frontend and JavaScript and Express.js on Node.js backend.
+- Worked with the Advanced Actuators team to develop embedded systems for electric motorcycle transmission, motor, and CANBUS systems.
+
+Technology Consultant
+Texas Facial Plastic Surgery and ENT | San Antonio, Texas, USA
+June 2016 - August 2021
+- Consulted the family-owned practice on software solutions for graphic, media, and UI/UX challenges.
+- Developed a web-content scraping Selenium VBA script in partnership with marketing company Aesthetic Brand Marketing. Successfully transfered HTML material from the Texas Facial Plastic Surgery and ENT's DermPro website to Shopify.
+
+Engineering Intern
+Leak Location Services, Inc. | San Antonio, Texas, USA
+June 2020 - August 2020
+- Investigated methods to identify hazardous leaks in industrial liners using high-impedance electrical systems.
+- Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.
+- Identified hazardous leaks in industrial liners and coordinating with clients and contractors at industrial worksites.
+
+Optical Heart Rate Sensor (Electrical Fundamentals Individual Assignment)
+April 2021 - April 2021
+['Independently designed electrical circuitry for an optical heart rate sensor. Amplified and filtered heart rate-induced changes in infrared reception from a photoresistive diode, output as a digital signal.']
+Independently designed electrical circuitry for an optical heart rate sensor. Amplified and filtered heart rate-induced changes in infrared reception from a photoresistive diode, output as a digital signal.
+Public Directory Data Collection Script (Wyd Student Startup)
+September 2020 - October 2020
+["Wrote software using Selenium and Excel VBA to data-scrape HTML content from Purdue University's public student directory as market research for a student startup company.", 'Used Python to process demographic data collected from over 35,000 students.']
+- Wrote software using Selenium and Excel VBA to data-scrape HTML content from Purdue University's public student directory as market research for a student startup company.
+- Used Python to process demographic data collected from over 35,000 students.
+
+Geoamperic Interpreter (Leak Location Services, Inc.)
+July 2020 - August 2020
+['Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.', 'The Geoamperic Interpreter uses a Raspberry Pi microcontroller and communicates with LCD display, GPS, and TI INA219 current sensor peripherals using UART, SPI, and I2C.', 'Python is used to process data and generate a Tkinter graphical user interface.']
+- Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.
+- The Geoamperic Interpreter uses a Raspberry Pi microcontroller and communicates with LCD display, GPS, and TI INA219 current sensor peripherals using UART, SPI, and I2C.
+- Python is used to process data and generate a Tkinter graphical user interface.
+
+GeoPlot-MATLAB (Leak Location Services, Inc.)
+July 2020 - July 2020
+['Developed software to plot large project worksites using iPhone GPS to collect data and Python/MATLAB to plot in 3D. The software is used to produce client deliverables and keep track of the location of industrial liner defects.']
+Developed software to plot large project worksites using iPhone GPS to collect data and Python/MATLAB to plot in 3D. The software is used to produce client deliverables and keep track of the location of industrial liner defects.
+SKILLS
+Computer-Aided Design, Python, Embedded Systems, MATLAB, Electrical, GPS, VBA, Selenium, Data, JavaScript, HTML, UI/UX, UI Design, Backend, CSS, Frontend, Wix Velo, PHP, UI, Node.js, Express.js, C++, C, Hardware, Git, Agile, GitHub, SPI, Embedded System, User Interface, UART, I2C, Signals, Circuit

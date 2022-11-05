@@ -1,0 +1,120 @@
+{
+    "firstname": "andres",
+    "lastname": "barrera",
+    "titles": {
+        "software engineer": [
+            "C",
+            "C++",
+            "Python",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "PHP",
+            "AWS",
+            "JSON",
+            "jQuery",
+            "Git",
+            "Node.js",
+            "Java",
+            "Object-Oriented Programming",
+            "Golang",
+            "API",
+            "Selenium",
+            "Express.js",
+            "Frontend",
+            "Backend",
+            "VBA"
+        ],
+        "data engineer": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "PHP",
+            "AWS",
+            "JSON",
+            "Git",
+            "Golang",
+            "API",
+            "Selenium",
+            "Matplotlib",
+            "Numpy",
+            "Artificial Intelligence",
+            "Data",
+            "Machine Learning",
+            "MATLAB",
+            "VBA"
+        ],
+        "frontend engineer": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "AWS",
+            "JSON",
+            "jQuery",
+            "Git",
+            "Selenium"
+        ],
+        "backend engineer": [
+            "C",
+            "C++",
+            "Python",
+            "JavaScript",
+            "PHP",
+            "AWS",
+            "JSON",
+            "jQuery",
+            "Git",
+            "Node.js",
+            "Java",
+            "Golang",
+            "API",
+            "Selenium",
+            "Express.js"
+        ],
+        "embedded systems engineer": [
+            "C",
+            "C++",
+            "Python",
+            "Git",
+            "Node.js",
+            "Object-Oriented Programming",
+            "Assembly",
+            "Verilog",
+            "MicroPython",
+            "Arduino",
+            "Microcontroller",
+            "Electrical",
+            "Schematic",
+            "SolidWorks",
+            "Computer Aided Design",
+            "Hardware",
+            "Software",
+            "PCB"
+        ],
+        "software developer": [
+            
+        ],
+        "full-stack engineer": [
+            
+        ],
+        "data scientist": [
+
+        ]
+    },
+    "locations": [
+        "remote",
+        "europe"
+    ],
+    "pay_range": [
+        70000.0,
+        110000.0
+    ],
+    "years_experience": "1",
+    "education": [
+        "Bachelor's Degree",
+        "Computer Engineering",
+        0
+    ],
+    "info_path": "candidates\\andres_barrera"
+}

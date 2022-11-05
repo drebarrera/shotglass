@@ -1,0 +1,4 @@
+BROWSER=Firefox
+BROWSER_PATH=C:\ProgramFiles\MozillaFirefox\firefox.exe
+BROWSER_HEADLESS=False
+BROWSER_EXECUTABLE=
