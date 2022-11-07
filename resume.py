@@ -382,15 +382,14 @@ class Resume:
         self.skills = [k for k, v in sorted(skill_list.items(), key=lambda item: item[1], reverse=True)]
         self.update_json()
 
-    def check_skills(self):
-        synonyms = [['c','c++'],['node.js','node js'],['express.js','express js'],['object-oriented programming','object oriented programming','oop'], ['frontend','front-end'],['backend','back-end'], ['embedded system','embedded systems'], ['ui','user interface','ui design','user interface design'], ['cad','computer aided design','computer-aided design']]
+    def check_skills(self, synonyms):
         for employment in self.employment:
             for skill in employment['skills']:
-                if not key_in_str(skill, ('').join(employment['description']), synonyms):
+                if not key_in_str(skill, ( '').join(employment['description']), synonyms):
                     print("Suggestion: Update the Resume employment to include skill '" + skill + "' in the description for", employment['position'], 'at', employment['company'] + '.')
         for project in self.projects:
             for skill in project['skills']:
-                if not key_in_str(skill, ('').join(project['description']), synonyms):
+                if not key_in_str(skill, (' ').join(project['description']), synonyms):
                     print("Suggestion: Update the Resume projects to include skill '" + skill + "' in the description for", project['name'] + '.')
 
     def build_resume(self, load=True):
@@ -412,9 +411,10 @@ class Resume:
             if len(employment['description']) > 1: 
                 for description in employment['description']: resume += ('- {}\n').format(description)
             else: resume += employment['description'][0]
+        resume += '\nPROJECTS'
         project_list = [self.projects[date['ind']] for date in str_to_date([project['end'] if project['end'].lower() != 'current' else '3000' for project in self.projects])]
         for project in project_list: 
-            resume += ('\n{} ({})\n{} - {}\n{}\n').format(project['name'], project['association'], project['start'], project['end'], project['description'])
+            resume += ('\n{} ({})\n{} - {}\n').format(project['name'], project['association'], project['start'], project['end'])
             if len(project['description']) > 1: 
                 for description in project['description']: resume += ('- {}\n').format(description)
             else: resume += project['description'][0]

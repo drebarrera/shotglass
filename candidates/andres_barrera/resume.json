@@ -197,9 +197,205 @@
                 "Circuit",
                 "Electrical"
             ]
+        },
+        {
+            "name": "DermPro Website Data Collection Program",
+            "association": "Texas Facial Plastic Surgery and ENT",
+            "start": "June 2021",
+            "end": "July 2021",
+            "description": [
+                "Partnered with Aethetic Brand Marketing to assist in the redesign of RejuveMD's Shopify store.",
+                "Developed a Excel VBA program using Selenium/JavaScript to collect HTML data from 55 pages of DermPro UI content."
+            ],
+            "skills": [
+                "UI",
+                "VBA",
+                "JavaScript",
+                "Selenium",
+                "HTML",
+                "Data Collection"
+            ]
+        },
+        {
+            "name": "Shortest Path Grid Traversal Program",
+            "association": "Data Structures Individual Assignment",
+            "start": "November 2021",
+            "end": "November 2021",
+            "description": [
+                "Independently developed a C program capable of computing the shortest path across a weighted grid using graph theory, data structures, and runtime analysis."
+            ],
+            "skills": [
+                "Runtime Analysis",
+                "C",
+                "Data Structures"
+            ]
+        },
+        {
+            "name": "Digital WAV Player Embedded System",
+            "association": "Microprocessor Systems Team Project",
+            "start": "November 2021",
+            "end": "December 2021",
+            "description": [
+                "Worked with a team to build a digital .wav file player embedded system capable of playing 8-bit and 16-bit audio files.",
+                "The WAV Player designed featured a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack on a custom PCB using SPI, DAC, DMA and GPIO."
+            ],
+            "skills": [
+                "DAC",
+                "C",
+                "SPI",
+                "Embedded System",
+                "PCB",
+                "DMA"
+            ]
+        },
+        {
+            "name": "OrgAI",
+            "association": "Independent",
+            "start": "January 2022",
+            "end": "January 2022",
+            "description": [
+                "Independently developed a Python Artificial Intelligence program, which suggests organizations at Purdue University based upon keywords and iterative learning.",
+                "Collected HTML data and processed language from Purdue's Organization Directory in real time with Selenium Python browser automation."
+            ],
+            "skills": [
+                "Selenium",
+                "AI",
+                "HTML",
+                "Python"
+            ]
+        },
+        {
+            "name": "Alpen Aerial Client Project Brief",
+            "association": "Alpen Aerial",
+            "start": "February 2022",
+            "end": "February 2022",
+            "description": [
+                "Independently designed a website for Alpen Aerial client-company communication with my custom Python to UI compiler, WebGen.",
+                "Developed a clean and beautiful HTML/CSS frontend with a JavaScript/PHP backend, giving both clients and contractors access to project-specific data."
+            ],
+            "skills": [
+                "CSS",
+                "UI",
+                "Website",
+                "OOP",
+                "JavaScript",
+                "HTML",
+                "PHP",
+                "Python"
+            ]
+        },
+        {
+            "name": "WebGen - Python to UI Compiler",
+            "association": "Independent",
+            "start": "August 2021",
+            "end": "March 2022",
+            "description": [
+                "Independently built a Python to HTML UI compiler, which uses object-oriented strategies to make optimize UI design.",
+                "Implemented CSS, JavaScript, and PHP integration through include files.",
+                "WebGen features global files to create components which are universally accessible across all webpages in a project."
+            ],
+            "skills": [
+                "CSS",
+                "UI",
+                "Website",
+                "OOP",
+                "JavaScript",
+                "HTML",
+                "PHP",
+                "Python"
+            ]
+        },
+        {
+            "name": "Repeat Rover",
+            "association": "Senior Design Team Project",
+            "start": "May 2022",
+            "end": "December 2022",
+            "description": [
+                "Served as the team leader on a team developing a remote-programmable vehicle for resource delivery in repeated process environments.",
+                "Developed embedded system components such as vehicle drive and wheel speed sensing.",
+                "Built the project website and controller interfaces using my custom-developed Python to UI compiler, HTML/CSS, JavaScript, and Node.js."
+            ],
+            "skills": [
+                "Embedded Systems",
+                "CSS",
+                "UI",
+                "Website Design",
+                "CAD",
+                "Hardware",
+                "C",
+                "Electrical",
+                "Node.js",
+                "JavaScript",
+                "HTML"
+            ]
+        },
+        {
+            "name": "Shotglass",
+            "association": "Independent",
+            "start": "October 2022",
+            "end": "November 2022",
+            "description": [
+                "Independently developed a Python application to find user-curated jobs with respectful data scraping, while producing job-specific resume and cover letters.",
+                "Shotglass collects job post HTML data using Selenium Python and analyzes user resumes with a custom command line interface and hassle-free data processing."
+            ],
+            "skills": [
+                "Data Collection",
+                "Selenium",
+                "HTML",
+                "Python"
+            ]
+        },
+        {
+            "name": "LogicSim",
+            "association": "April 2022",
+            "start": "April 2022",
+            "end": "May 2022",
+            "description": [
+                "LogicSim provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems. LogicSim was created to aid in the testing of ASIC system logic in a fast and efficient way."
+            ],
+            "skills": [
+                "Hardware",
+                "Verilog",
+                "Signals",
+                "OOP",
+                "Python"
+            ]
         }
     ],
-    "special": [],
+    "special": [
+        {
+            "name": "AWS Technical Essentials",
+            "date": "September 2022",
+            "bypass_filter": true,
+            "skills": [
+                "AWS"
+            ]
+        },
+        {
+            "name": "AGMA Fundamentals of Gearing Certification",
+            "date": "July 2022",
+            "bypass_filter": false,
+            "skills": [
+                "Hardware"
+            ]
+        },
+        {
+            "name": "Udemy Golang Course Certification",
+            "date": "July 2022",
+            "bypass_filter": false,
+            "skills": [
+                "Golang"
+            ]
+        },
+        {
+            "name": "Purdue Foundry Firestarter Startup Training Program",
+            "date": "March 2020",
+            "bypass_filter": false,
+            "skills": [
+                "Startup"
+            ]
+        }
+    ],
     "skills": [
         "Computer-Aided Design",
         "Python",
@@ -234,7 +430,22 @@
         "UART",
         "I2C",
         "Signals",
-        "Circuit"
+        "Circuit",
+        "Data Collection",
+        "Runtime Analysis",
+        "Data Structures",
+        "DAC",
+        "PCB",
+        "DMA",
+        "AI",
+        "Website",
+        "OOP",
+        "Website Design",
+        "CAD",
+        "Verilog",
+        "AWS",
+        "Golang",
+        "Startup"
     ],
     "info_path": "candidates\\andres_barrera"
 }

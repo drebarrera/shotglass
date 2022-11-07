@@ -118,15 +118,14 @@ def str_to_date(dates, DATE_FORMAT='MM-DD-YY'):
         if sorting_complete: break
     return date_list
         
-def key_in_str(sample, population, synonyms=list):
+def key_in_str(sample, population, synonyms=dict()):
     sample = sample.lower()
     population = population.lower()
-    for synonym_list in synonyms:
-        if sample in synonym_list:
-            for synonym in synonym_list:
-                if synonym in population:
-                    return True
-            return False
+    if sample in synonyms:
+        for s in synonyms[sample]:
+            if s.lower() in population:
+                return True
+        return False
     if sample in population:
         return True
     return False

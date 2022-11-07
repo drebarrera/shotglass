@@ -215,10 +215,10 @@ class Candidate:
             resume.build_resume(False)
             resume.update_skills()
             print('Resume updated with changes.\n')
-        resume.check_skills()
+        resume.check_skills(self.synonyms())
         all_keywords = list()
-        [all_keywords.extend([(k, title) for k in self.titles[title]]) for title in self.titles]
-        self.check_keywords(resume.build_resume(False), all_keywords)
+        [all_keywords.extend([(k.split('/')[0], title) for k in self.titles[title]]) for title in self.titles]
+        self.check_keywords(resume.build_resume(False), list(set(all_keywords)), self.synonyms())
         print('Use the command line to implement the suggestions above.\n')
 
     def check_language(self, paragraph, lt):
@@ -245,10 +245,10 @@ class Candidate:
             offset += len(r[2]) - r[1]
         return paragraph
 
-    def check_keywords(self, paragraph, keywords):
+    def check_keywords(self, paragraph, keywords, synonyms):
         paragraph = paragraph.lower()
         for k in keywords:
-            if not(k[0], paragraph):
+            if not key_in_str(k[0], paragraph, synonyms):
                 print("Suggestion: Update the Resume to include candidate keyword '" + k[0] + "'.")
 
     def title_keys(self):
@@ -266,6 +266,17 @@ class Candidate:
     def list_title(self, title):
         if title.lower() not in self.titles: print('[!!!] ERR:', title, 'not in job title list for candidate', self.get_name, '.'); return
         print('Job title', title.upper() + ':', self.titles[title.lower()], '\n')
+
+    def synonyms(self):
+        synonyms = dict()
+        for title in self.titles:
+            for keyword in self.titles[title]:
+                ks = keyword.lower().split('/')
+                if len(ks) > 1:
+                    for k in ks:
+                        if k not in synonyms: synonyms[k] = set(ks)
+                        else: synonyms[k].union(set(ks))
+        return synonyms
 
     def update_json(self):
         update_json(r_path(self.info_path, 'candidate.json'), self, ['jobs','Resume'])
