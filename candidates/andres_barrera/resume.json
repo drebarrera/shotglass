@@ -58,43 +58,46 @@
                 "VBA",
                 "Selenium",
                 "Data",
-                "JavaScript",
                 "HTML",
-                "UI/UX"
+                "UI",
+                "Graphic Design",
+                "Website Design"
             ]
         },
         {
-            "position": "User Interface Designer",
-            "company": "Developing interactive panoramic virtual tour and frontend website content with HTML, CSS, JavaScript, and Kuula.",
+            "position": "Frontend Engineer",
+            "company": "Alpen Aerial",
             "location": "Colorado Springs, CO, United States (Remote)",
             "start": "August 2021",
             "end": "Current",
             "description": [
                 "Designing interactive panoramic virtual tour and frontend website content with HTML, CSS, JavaScript, and Kuula.",
                 "Developed a client-communication interface with HTML/CSS frontend and JavaScript/PHP backend.",
-                "Redesigned the company website using the Wix Development platform and Wix Velo script."
+                "Redesigned the company website using the Wix Development platform, Wix Velo script, and custom graphics."
             ],
             "skills": [
-                "UI Design",
+                "UI",
                 "Backend",
                 "JavaScript",
                 "HTML",
                 "CSS",
                 "Frontend",
                 "Wix Velo",
-                "PHP"
+                "PHP",
+                "Graphic Design"
             ]
         },
         {
-            "position": "Software Engineer Intern",
+            "position": "Junior Software Engineer",
             "company": "Fathom5",
             "location": "Austin, Texas, USA",
             "start": "June 2022",
-            "end": "August 2022",
+            "end": "Current",
             "description": [
-                "Developed software solutions for implementing and assessing microcontroller-based hardware and C/C++ software.",
+                "Developed software solutions for implementing and assessing microcontroller/Arduino-based embedded systems and C/C++ software in an Agile environment.",
                 "Created UI interfaces for live hardware verification with HTML/CSS frontend and JavaScript and Express.js on Node.js backend.",
-                "Worked with the Advanced Actuators team to develop embedded systems for electric motorcycle transmission, motor, and CANBUS systems."
+                "Programmed Python software to mathematically analyze profile-shifted gear systems and predict gear interference events.",
+                "Worked with the Advanced Actuators team to develop and maintain Git repositories and documentation for electric motorcycle transmission, motor, and CANBUS systems."
             ],
             "skills": [
                 "UI",
@@ -110,25 +113,9 @@
                 "C",
                 "Hardware",
                 "Git",
-                "Electrical"
-            ]
-        },
-        {
-            "position": "Junior Software Engineer",
-            "company": "Fathom5",
-            "location": "Austin, Texas, USA (Remote)",
-            "start": "August 2022",
-            "end": "December 2022",
-            "description": [
-                "Developing and researching software solutions for Industry 4.0 technology in an Agile framework environment.",
-                "Programmed Python software to mathematically analyze profile-shifted gear systems and predict gear interference events.",
-                "Wrote and maintained code and documentation in Git project repositories."
-            ],
-            "skills": [
-                "Git",
+                "Electrical",
                 "Agile",
-                "Python",
-                "GitHub"
+                "Python"
             ]
         }
     ],
@@ -139,7 +126,8 @@
             "start": "July 2020",
             "end": "July 2020",
             "description": [
-                "Developed software to plot large project worksites using iPhone GPS to collect data and Python/MATLAB to plot in 3D. The software is used to produce client deliverables and keep track of the location of industrial liner defects."
+                "Developed software to plot large project worksites using iPhone GPS to collect data and Python/MATLAB to plot in 3D.",
+                "Used GeoPlot to produce client deliverables and keep track of the location of industrial liner defects."
             ],
             "skills": [
                 "GPS",
@@ -153,8 +141,8 @@
             "start": "July 2020",
             "end": "August 2020",
             "description": [
-                "Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.",
-                "The Geoamperic Interpreter uses a Raspberry Pi microcontroller and communicates with LCD display, GPS, and TI INA219 current sensor peripherals using UART, SPI, and I2C.",
+                "Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python/MicroPython, Computer-Aided Design, and MATLAB.",
+                "The Geoamperic Interpreter uses a custom PCB shield on a Raspberry Pi microcontroller and communicates with LCD display, GPS, and TI INA219 current sensor peripherals using UART, SPI, and I2C.",
                 "Python is used to process data and generate a Tkinter graphical user interface."
             ],
             "skills": [
@@ -165,7 +153,10 @@
                 "Computer-Aided Design",
                 "UART",
                 "I2C",
-                "MATLAB"
+                "MATLAB",
+                "MicroPython",
+                "PCB",
+                "Tkinter"
             ]
         },
         {
@@ -182,20 +173,6 @@
                 "VBA",
                 "HTML",
                 "Python"
-            ]
-        },
-        {
-            "name": "Optical Heart Rate Sensor",
-            "association": "Electrical Fundamentals Individual Assignment",
-            "start": "April 2021",
-            "end": "April 2021",
-            "description": [
-                "Independently designed electrical circuitry for an optical heart rate sensor. Amplified and filtered heart rate-induced changes in infrared reception from a photoresistive diode, output as a digital signal."
-            ],
-            "skills": [
-                "Signals",
-                "Circuit",
-                "Electrical"
             ]
         },
         {
@@ -217,27 +194,14 @@
             ]
         },
         {
-            "name": "Shortest Path Grid Traversal Program",
-            "association": "Data Structures Individual Assignment",
-            "start": "November 2021",
-            "end": "November 2021",
-            "description": [
-                "Independently developed a C program capable of computing the shortest path across a weighted grid using graph theory, data structures, and runtime analysis."
-            ],
-            "skills": [
-                "Runtime Analysis",
-                "C",
-                "Data Structures"
-            ]
-        },
-        {
             "name": "Digital WAV Player Embedded System",
             "association": "Microprocessor Systems Team Project",
             "start": "November 2021",
             "end": "December 2021",
             "description": [
-                "Worked with a team to build a digital .wav file player embedded system capable of playing 8-bit and 16-bit audio files.",
-                "The WAV Player designed featured a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack on a custom PCB using SPI, DAC, DMA and GPIO."
+                "Worked with a team to build a digital .wav file player embedded system, capable of playing 8-bit and 16-bit audio files with C/Assembly software.",
+                "The WAV Player designed featured a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack.",
+                "Soldered hardware on a custom PCB and programmed access to the STM32 microchip's SPI, DAC, DMA and GPIO features."
             ],
             "skills": [
                 "DAC",
@@ -245,7 +209,9 @@
                 "SPI",
                 "Embedded System",
                 "PCB",
-                "DMA"
+                "DMA",
+                "Hardware",
+                "Assembly"
             ]
         },
         {
@@ -270,7 +236,7 @@
             "start": "February 2022",
             "end": "February 2022",
             "description": [
-                "Independently designed a website for Alpen Aerial client-company communication with my custom Python to UI compiler, WebGen.",
+                "Independently designed a website for Alpen Aerial client-company communication with my custom object-oriented Python to UI compiler, WebGen.",
                 "Developed a clean and beautiful HTML/CSS frontend with a JavaScript/PHP backend, giving both clients and contractors access to project-specific data."
             ],
             "skills": [
@@ -290,7 +256,7 @@
             "start": "August 2021",
             "end": "March 2022",
             "description": [
-                "Independently built a Python to HTML UI compiler, which uses object-oriented strategies to make optimize UI design.",
+                "Independently built a Python to HTML UI compiler, which uses object-oriented strategies to make optimize UI/website design.",
                 "Implemented CSS, JavaScript, and PHP integration through include files.",
                 "WebGen features global files to create components which are universally accessible across all webpages in a project."
             ],
@@ -311,8 +277,8 @@
             "start": "May 2022",
             "end": "December 2022",
             "description": [
-                "Served as the team leader on a team developing a remote-programmable vehicle for resource delivery in repeated process environments.",
-                "Developed embedded system components such as vehicle drive and wheel speed sensing.",
+                "Served as the team leader on a team developing a flexible remote-programmable vehicle for resource delivery in repeated process environments.",
+                "Developed embedded system components such as vehicle drive and wheel speed sensing with CAD-designed hardware, a custom designed PCB/electrical, machine learning, and C software.",
                 "Built the project website and controller interfaces using my custom-developed Python to UI compiler, HTML/CSS, JavaScript, and Node.js."
             ],
             "skills": [
@@ -326,7 +292,9 @@
                 "Electrical",
                 "Node.js",
                 "JavaScript",
-                "HTML"
+                "HTML",
+                "Machine Learning",
+                "PCB"
             ]
         },
         {
@@ -336,29 +304,33 @@
             "end": "November 2022",
             "description": [
                 "Independently developed a Python application to find user-curated jobs with respectful data scraping, while producing job-specific resume and cover letters.",
-                "Shotglass collects job post HTML data using Selenium Python and analyzes user resumes with a custom command line interface and hassle-free data processing."
+                "Shotglass collects job post HTML data using Selenium Python and analyzes user resumes with an intuitive command line interface, JSON-formatted data storage, and hassle-free data processing."
             ],
             "skills": [
                 "Data Collection",
                 "Selenium",
                 "HTML",
-                "Python"
+                "Python",
+                "JSON"
             ]
         },
         {
             "name": "LogicSim",
-            "association": "April 2022",
+            "association": "Independent",
             "start": "April 2022",
             "end": "May 2022",
             "description": [
-                "LogicSim provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems. LogicSim was created to aid in the testing of ASIC system logic in a fast and efficient way."
+                "LogicSim provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems.",
+                "LogicSim was created to aid in ASIC system logic verification in a fast and efficient way, using Matplotlib/Numpy to process and graph signals."
             ],
             "skills": [
                 "Hardware",
                 "Verilog",
                 "Signals",
                 "OOP",
-                "Python"
+                "Python",
+                "Matplotlib",
+                "Numpy"
             ]
         }
     ],
@@ -406,16 +378,16 @@
         "VBA",
         "Selenium",
         "Data",
-        "JavaScript",
         "HTML",
-        "UI/UX",
-        "UI Design",
+        "UI",
+        "Graphic Design",
+        "Website Design",
         "Backend",
+        "JavaScript",
         "CSS",
         "Frontend",
         "Wix Velo",
         "PHP",
-        "UI",
         "Node.js",
         "Express.js",
         "C++",
@@ -423,26 +395,28 @@
         "Hardware",
         "Git",
         "Agile",
-        "GitHub",
         "SPI",
         "Embedded System",
         "User Interface",
         "UART",
         "I2C",
-        "Signals",
-        "Circuit",
-        "Data Collection",
-        "Runtime Analysis",
-        "Data Structures",
-        "DAC",
+        "MicroPython",
         "PCB",
+        "Tkinter",
+        "Data Collection",
+        "DAC",
         "DMA",
+        "Assembly",
         "AI",
         "Website",
         "OOP",
-        "Website Design",
         "CAD",
+        "Machine Learning",
+        "JSON",
         "Verilog",
+        "Signals",
+        "Matplotlib",
+        "Numpy",
         "AWS",
         "Golang",
         "Startup"

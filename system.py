@@ -29,7 +29,6 @@ class System:
         candidates = file.listdir("candidates")
         for candidate in candidates:
             candidate = self.Candidate('', '', candidate)
-            #if candidate != None: self.candidates.append(candidate)
         print()
 
     def cmd_Candidate(self, candidate: c.Candidate):
@@ -134,7 +133,8 @@ class System:
     def load_Candidate(self, _firstname, _lastname):
         firstname = _firstname.lower().replace(' ','_')
         lastname = _lastname.lower().replace(' ','_')
-        candidate = self.find_Candidate(firstname, lastname)
+        if firstname == "" and lastname == "" and len(self.candidates) == 1: candidate = self.candidates[0]
+        else: candidate = self.find_Candidate(firstname, lastname)
         if candidate == None: return
         self.cmd_Candidate(candidate)
 

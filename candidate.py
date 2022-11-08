@@ -29,7 +29,8 @@ class Candidate:
         while res != "":
             res = input('>> ')
             if res != "": 
-                if res.lower() not in self.titles: self.titles[res.lower()] = list()
+                if res.lower() not in self.get_titles(): self.titles[res.lower()] = list()
+                else: res = self.get_titles()[res.lower()]
                 new_titles.append(res.lower())
         for title in new_titles:
             print('Add keywords for the job title "' + title + '"')
@@ -64,7 +65,7 @@ class Candidate:
         res = None
         while res != "":
             res = input('>> ')
-            if res != "" and res.lower() not in self.titles: self.locations.append(res.lower())
+            if res != "" and res.lower() not in self.locations: self.locations.append(res.lower())
         print('Locations listed for candidate', self.get_name() + ':', self.locations, '\n')
         self.update_json()
 
@@ -217,8 +218,8 @@ class Candidate:
             print('Resume updated with changes.\n')
         resume.check_skills(self.synonyms())
         all_keywords = list()
-        [all_keywords.extend([(k.split('/')[0], title) for k in self.titles[title]]) for title in self.titles]
-        self.check_keywords(resume.build_resume(False), list(set(all_keywords)), self.synonyms())
+        [all_keywords.extend([k.split('/')[0] for k in self.titles[title]]) for title in self.titles]
+        self.check_keywords(resume.build_resume(False), all_keywords, self.synonyms())
         print('Use the command line to implement the suggestions above.\n')
 
     def check_language(self, paragraph, lt):
@@ -247,9 +248,9 @@ class Candidate:
 
     def check_keywords(self, paragraph, keywords, synonyms):
         paragraph = paragraph.lower()
-        for k in keywords:
-            if not key_in_str(k[0], paragraph, synonyms):
-                print("Suggestion: Update the Resume to include candidate keyword '" + k[0] + "'.")
+        for k in set(keywords):
+            if not key_in_str(k, paragraph, synonyms):
+                print("Suggestion: Update the Resume to include candidate keyword '" + k + "'.")
 
     def title_keys(self):
         print("Choose a title: " + (', ').join([title for title in self.titles]))
@@ -277,6 +278,13 @@ class Candidate:
                         if k not in synonyms: synonyms[k] = set(ks)
                         else: synonyms[k].union(set(ks))
         return synonyms
+
+    def get_titles(self):
+        x = dict()
+        for title in self.titles:
+            for t in title.split('/'):
+                x[t] = title
+        return x
 
     def update_json(self):
         update_json(r_path(self.info_path, 'candidate.json'), self, ['jobs','Resume'])

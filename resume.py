@@ -405,20 +405,20 @@ class Resume:
             if len(education['coursework']) > 0: resume += 'Relevant Coursework:\n'
             for coursework in education['coursework']: resume += ('- {}\n').format(coursework)
         resume += '\nWORK EXPERIENCE'
-        employment_list = [self.employment[date['ind']] for date in str_to_date([employment['end'] if employment['end'].lower() != 'current' else '3000' for employment in self.employment])]
+        employment_list = [self.employment[date['ind']] for date in str_to_date([employment['end'] if employment['end'].lower() != 'current' else '3000' for employment in self.employment], secondary_order=[len(employment['skills']) for employment in self.employment])]
         for employment in employment_list: 
             resume += ('\n{}\n{} | {}\n{} - {}\n').format(employment['position'], employment['company'], employment['location'], employment['start'], employment['end'])
             if len(employment['description']) > 1: 
                 for description in employment['description']: resume += ('- {}\n').format(description)
             else: resume += employment['description'][0]
         resume += '\nPROJECTS'
-        project_list = [self.projects[date['ind']] for date in str_to_date([project['end'] if project['end'].lower() != 'current' else '3000' for project in self.projects])]
+        project_list = [self.projects[date['ind']] for date in str_to_date([project['end'] if project['end'].lower() != 'current' else '3000' for project in self.projects], secondary_order=[len(project['skills']) for project in self.projects])]
         for project in project_list: 
             resume += ('\n{} ({})\n{} - {}\n').format(project['name'], project['association'], project['start'], project['end'])
             if len(project['description']) > 1: 
                 for description in project['description']: resume += ('- {}\n').format(description)
-            else: resume += project['description'][0]
-        special_list = [self.special[date['ind']] for date in str_to_date([special['date'] if special['date'].lower() != 'current' else '3000' for special in self.special])]
+            else: resume += project['description'][0] + '\n'
+        special_list = [self.special[date['ind']] for date in str_to_date([special['date'] if special['date'].lower() != 'current' else '3000' for special in self.special], secondary_order=[len(special['skills']) for special in self.special])]
         if len(special_list) > 0: resume += '\nCERTIFICATIONS/ACCOMPLISHMENTS\n'
         if len(special_list) > 0: resume += (' \u2022 ').join([('{} ({})').format(special['name'], special['date']) for special in special_list]) + '\n'
         resume += '\nSKILLS\n'
