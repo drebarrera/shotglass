@@ -3,12 +3,13 @@ import filemanager as file
 import difflib
 import datetime
 import re
+import os
 
 def j_path(*args):
-    return ('\\').join(args)
+    return os.path.join(*args)
 
 def r_path(*args):
-    return file.realpath(('\\').join(args))
+    return file.realpath(os.path.join(*args))
 
 def update_json(filedir, dump_obj, exclude=[]):
     dict_obj = replicate_dict(dump_obj.__dict__)

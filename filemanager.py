@@ -2,6 +2,7 @@ import sys
 import os
 import shutil
 import json
+import subprocess
 
 def delete_dir(path):
     return shutil.rmtree(path)
@@ -42,7 +43,16 @@ def makedir(path):
     return os.mkdir(path)
 
 def startfile(path):
-    return os.startfile(path)
+    if sys.platform == "win32":
+        try:
+            subprocess.call(["vscode.exe", path])
+        except Exception:
+            subprocess.Popen(["notepad.exe", path])
+    elif sys.platform == "darwin":
+        try:
+            subprocess.call(['open', '-a', 'Visual Studio Code', path])
+        except Exception as exc:
+            subprocess.call(['open', '-a', 'TextEdit', path])
 
 def realpath(path):
     return os.path.realpath(path)

@@ -52,7 +52,7 @@
             "end": "August 2021",
             "description": [
                 "Consulted the family-owned practice on software solutions for graphic, media, and UI/UX challenges.",
-                "Developed a web-content scraping Selenium VBA script in partnership with marketing company Aesthetic Brand Marketing. Successfully transfered HTML material from the Texas Facial Plastic Surgery and ENT's DermPro website to Shopify."
+                "Developed a HTML data scraping Selenium VBA script in partnership with marketing company Aesthetic Brand Marketing. Successfully transfered HTML material from the Texas Facial Plastic Surgery and ENT's DermPro website to Shopify."
             ],
             "skills": [
                 "VBA",
@@ -447,5 +447,5 @@
         "Golang",
         "Startup"
     ],
-    "info_path": "candidates\\andres_barrera"
+    "info_path": "candidates/andres_barrera"
 }

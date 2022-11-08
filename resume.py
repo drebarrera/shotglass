@@ -427,7 +427,7 @@ class Resume:
         f.write(resume)
         f.close()
         if load: 
-            file.startfile(r_path(file.getcwd(), self.info_path, 'resume'))
+            file.startfile(r_path(file.getcwd(), self.info_path, 'resume', 'resume.txt'))
             print('Resume generated.')
             print()
         return resume

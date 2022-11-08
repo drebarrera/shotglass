@@ -113,7 +113,7 @@ GeoPlot-MATLAB (Leak Location Services, Inc.)
 July 2020 - July 2020
 Developed software to plot large project worksites using iPhone GPS to collect data and Python/MATLAB to plot in 3D. The software is used to produce client deliverables and keep track of the location of industrial liner defects.
 CERTIFICATIONS/ACCOMPLISHMENTS
-AWS Technical Essentials (September 2022) • AGMA Fundamentals of Gearing Certification (July 2022) • Udemy Golang Course Certification (July 2022) • Purdue Foundry Firestarter Startup Training Program (March 2020)
+AWS Technical Essentials (September 2022) â€¢ AGMA Fundamentals of Gearing Certification (July 2022) â€¢ Udemy Golang Course Certification (July 2022) â€¢ Purdue Foundry Firestarter Startup Training Program (March 2020)
 
 SKILLS
 Computer-Aided Design, Python, Embedded Systems, MATLAB, Electrical, GPS, VBA, Selenium, Data, JavaScript, HTML, UI/UX, UI Design, Backend, CSS, Frontend, Wix Velo, PHP, UI, Node.js, Express.js, C++, C, Hardware, Git, Agile, GitHub, SPI, Embedded System, User Interface, UART, I2C, Signals, Circuit, Data Collection, Runtime Analysis, Data Structures, DAC, PCB, DMA, AI, Website, OOP, Website Design, CAD, Verilog, AWS, Golang, Startup

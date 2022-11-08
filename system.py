@@ -27,7 +27,9 @@ class System:
 
     def load(self):
         candidates = file.listdir("candidates")
-        self.candidates = [self.Candidate('', '', candidate) for candidate in candidates]
+        for candidate in candidates:
+            candidate = self.Candidate('', '', candidate)
+            #if candidate != None: self.candidates.append(candidate)
         print()
 
     def cmd_Candidate(self, candidate: c.Candidate):
@@ -79,6 +81,7 @@ class System:
         candidate = c.Candidate(_firstname, _lastname)
         cname = _firstname.lower().replace(' ','_') + '_' + _lastname.lower().replace(' ','_') if _fullname == None else _fullname
         if file.pathexists(r_path(file.getcwd(), 'candidates', cname)):
+            if not file.pathexists(r_path(file.getcwd(), 'candidates', cname, 'candidate.json')): return None
             candidate = load_obj(r_path(file.getcwd(), 'candidates', cname, 'candidate.json'), candidate)
             print('Candidate', candidate.get_name(), 'retrieved.\n')
         else:
