@@ -31,9 +31,8 @@
             "start": "June 2020",
             "end": "August 2020",
             "description": [
-                "Investigated methods to identify hazardous leaks in industrial liners using high-impedance electrical systems.",
-                "Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.",
-                "Identified hazardous leaks in industrial liners and coordinating with clients and contractors at industrial worksites."
+                "Investigated methods to identify hazardous leaks in industrial liners using high-impedance electrical systems. Coordinated with contractors and clients on industrial worksites.",
+                "Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB."
             ],
             "skills": [
                 "Computer-Aided Design",
@@ -67,13 +66,13 @@
         {
             "position": "Frontend Engineer",
             "company": "Alpen Aerial",
-            "location": "Colorado Springs, CO, United States (Remote)",
+            "location": "Colorado Springs, Colorado, USA (Remote)",
             "start": "August 2021",
             "end": "Current",
             "description": [
                 "Designing interactive panoramic virtual tour and frontend website content with HTML, CSS, JavaScript, and Kuula.",
-                "Developed a client-communication interface with HTML/CSS frontend and JavaScript/PHP backend.",
-                "Redesigned the company website using the Wix Development platform, Wix Velo script, and custom graphics."
+                "Developed a client-communication interface with a HTML/CSS frontend and JavaScript/PHP backend.",
+                "Re-designed the company website using the Wix Development platform, Wix Velo script, and custom graphics."
             ],
             "skills": [
                 "UI",
@@ -94,7 +93,7 @@
             "start": "June 2022",
             "end": "Current",
             "description": [
-                "Developed software solutions for implementing and assessing microcontroller/Arduino-based embedded systems and C/C++ software in an Agile environment.",
+                "Developing software solutions for implementing and assessing microcontroller/Arduino-based embedded systems and C/C++ software in an Agile environment.",
                 "Created UI interfaces for live hardware verification with HTML/CSS frontend and JavaScript and Express.js on Node.js backend.",
                 "Programmed Python software to mathematically analyze profile-shifted gear systems and predict gear interference events.",
                 "Worked with the Advanced Actuators team to develop and maintain Git repositories and documentation for electric motorcycle transmission, motor, and CANBUS systems."
@@ -182,12 +181,11 @@
             "end": "July 2021",
             "description": [
                 "Partnered with Aethetic Brand Marketing to assist in the redesign of RejuveMD's Shopify store.",
-                "Developed a Excel VBA program using Selenium/JavaScript to collect HTML data from 55 pages of DermPro UI content."
+                "Developed a Excel VBA program using Selenium to collect HTML data from 55 pages of DermPro UI content."
             ],
             "skills": [
                 "UI",
                 "VBA",
-                "JavaScript",
                 "Selenium",
                 "HTML",
                 "Data Collection"
@@ -200,8 +198,8 @@
             "end": "December 2021",
             "description": [
                 "Worked with a team to build a digital .wav file player embedded system, capable of playing 8-bit and 16-bit audio files with C/Assembly software.",
-                "The WAV Player designed featured a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack.",
-                "Soldered hardware on a custom PCB and programmed access to the STM32 microchip's SPI, DAC, DMA and GPIO features."
+                "The WAV Player features a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack.",
+                "Soldered hardware on a custom PCB and programmed access to the STM32 microchip's SPI, DAC, DMA and GPIO features in C."
             ],
             "skills": [
                 "DAC",
@@ -256,7 +254,7 @@
             "start": "August 2021",
             "end": "March 2022",
             "description": [
-                "Independently built a Python to HTML UI compiler, which uses object-oriented strategies to make optimize UI/website design.",
+                "Independently built a Python to HTML UI compiler, which uses object-oriented strategies to optimize UI/website design.",
                 "Implemented CSS, JavaScript, and PHP integration through include files.",
                 "WebGen features global files to create components which are universally accessible across all webpages in a project."
             ],
@@ -279,7 +277,7 @@
             "description": [
                 "Served as the team leader on a team developing a flexible remote-programmable vehicle for resource delivery in repeated process environments.",
                 "Developed embedded system components such as vehicle drive and wheel speed sensing with CAD-designed hardware, a custom designed PCB/electrical, machine learning, and C software.",
-                "Built the project website and controller interfaces using my custom-developed Python to UI compiler, HTML/CSS, JavaScript, and Node.js."
+                "Built the project website and controller interfaces using my custom-developed Python to UI compiler (WebGen), HTML/CSS, JavaScript, and Node.js."
             ],
             "skills": [
                 "Embedded Systems",
@@ -320,7 +318,7 @@
             "start": "April 2022",
             "end": "May 2022",
             "description": [
-                "LogicSim provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems.",
+                "Independently developed an application that provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems.",
                 "LogicSim was created to aid in ASIC system logic verification in a fast and efficient way, using Matplotlib/Numpy to process and graph signals."
             ],
             "skills": [
@@ -336,7 +334,7 @@
     ],
     "special": [
         {
-            "name": "AWS Technical Essentials",
+            "name": "AWS Technical Essentials Certification",
             "date": "September 2022",
             "bypass_filter": true,
             "skills": [

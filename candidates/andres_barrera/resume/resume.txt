@@ -20,17 +20,17 @@ WORK EXPERIENCE
 Junior Software Engineer
 Fathom5 | Austin, Texas, USA
 June 2022 - Current
-- Developed software solutions for implementing and assessing microcontroller/Arduino-based embedded systems and C/C++ software in an Agile environment.
+- Developing software solutions for implementing and assessing microcontroller/Arduino-based embedded systems and C/C++ software in an Agile environment.
 - Created UI interfaces for live hardware verification with HTML/CSS frontend and JavaScript and Express.js on Node.js backend.
 - Programmed Python software to mathematically analyze profile-shifted gear systems and predict gear interference events.
 - Worked with the Advanced Actuators team to develop and maintain Git repositories and documentation for electric motorcycle transmission, motor, and CANBUS systems.
 
 Frontend Engineer
-Alpen Aerial | Colorado Springs, CO, United States (Remote)
+Alpen Aerial | Colorado Springs, Colorado, USA (Remote)
 August 2021 - Current
 - Designing interactive panoramic virtual tour and frontend website content with HTML, CSS, JavaScript, and Kuula.
-- Developed a client-communication interface with HTML/CSS frontend and JavaScript/PHP backend.
-- Redesigned the company website using the Wix Development platform, Wix Velo script, and custom graphics.
+- Developed a client-communication interface with a HTML/CSS frontend and JavaScript/PHP backend.
+- Re-designed the company website using the Wix Development platform, Wix Velo script, and custom graphics.
 
 Technology Consultant
 Texas Facial Plastic Surgery and ENT | San Antonio, Texas, USA
@@ -41,16 +41,15 @@ June 2016 - August 2021
 Engineering Intern
 Leak Location Services, Inc. | San Antonio, Texas, USA
 June 2020 - August 2020
-- Investigated methods to identify hazardous leaks in industrial liners using high-impedance electrical systems.
+- Investigated methods to identify hazardous leaks in industrial liners using high-impedance electrical systems. Coordinated with contractors and clients on industrial worksites.
 - Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.
-- Identified hazardous leaks in industrial liners and coordinating with clients and contractors at industrial worksites.
 
 PROJECTS
 Repeat Rover (Senior Design Team Project)
 May 2022 - December 2022
 - Served as the team leader on a team developing a flexible remote-programmable vehicle for resource delivery in repeated process environments.
 - Developed embedded system components such as vehicle drive and wheel speed sensing with CAD-designed hardware, a custom designed PCB/electrical, machine learning, and C software.
-- Built the project website and controller interfaces using my custom-developed Python to UI compiler, HTML/CSS, JavaScript, and Node.js.
+- Built the project website and controller interfaces using my custom-developed Python to UI compiler (WebGen), HTML/CSS, JavaScript, and Node.js.
 
 Shotglass (Independent)
 October 2022 - November 2022
@@ -59,12 +58,12 @@ October 2022 - November 2022
 
 LogicSim (Independent)
 April 2022 - May 2022
-- LogicSim provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems.
+- Independently developed an application that provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems.
 - LogicSim was created to aid in ASIC system logic verification in a fast and efficient way, using Matplotlib/Numpy to process and graph signals.
 
 WebGen - Python to UI Compiler (Independent)
 August 2021 - March 2022
-- Independently built a Python to HTML UI compiler, which uses object-oriented strategies to make optimize UI/website design.
+- Independently built a Python to HTML UI compiler, which uses object-oriented strategies to optimize UI/website design.
 - Implemented CSS, JavaScript, and PHP integration through include files.
 - WebGen features global files to create components which are universally accessible across all webpages in a project.
 
@@ -81,13 +80,13 @@ January 2022 - January 2022
 Digital WAV Player Embedded System (Microprocessor Systems Team Project)
 November 2021 - December 2021
 - Worked with a team to build a digital .wav file player embedded system, capable of playing 8-bit and 16-bit audio files with C/Assembly software.
-- The WAV Player designed featured a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack.
-- Soldered hardware on a custom PCB and programmed access to the STM32 microchip's SPI, DAC, DMA and GPIO features.
+- The WAV Player features a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack.
+- Soldered hardware on a custom PCB and programmed access to the STM32 microchip's SPI, DAC, DMA and GPIO features in C.
 
 DermPro Website Data Collection Program (Texas Facial Plastic Surgery and ENT)
 June 2021 - July 2021
 - Partnered with Aethetic Brand Marketing to assist in the redesign of RejuveMD's Shopify store.
-- Developed a Excel VBA program using Selenium/JavaScript to collect HTML data from 55 pages of DermPro UI content.
+- Developed a Excel VBA program using Selenium to collect HTML data from 55 pages of DermPro UI content.
 
 Public Directory Data Collection Script (Wyd Student Startup)
 September 2020 - October 2020
@@ -106,7 +105,7 @@ July 2020 - July 2020
 - Used GeoPlot to produce client deliverables and keep track of the location of industrial liner defects.
 
 CERTIFICATIONS/ACCOMPLISHMENTS
-AWS Technical Essentials (September 2022) • AGMA Fundamentals of Gearing Certification (July 2022) • Udemy Golang Course Certification (July 2022) • Purdue Foundry Firestarter Startup Training Program (March 2020)
+AWS Technical Essentials Certification (September 2022) • AGMA Fundamentals of Gearing Certification (July 2022) • Udemy Golang Course Certification (July 2022) • Purdue Foundry Firestarter Startup Training Program (March 2020)
 
 SKILLS
 Computer-Aided Design, Python, Embedded Systems, MATLAB, Electrical, GPS, VBA, Selenium, Data, HTML, UI, Graphic Design, Website Design, Backend, JavaScript, CSS, Frontend, Wix Velo, PHP, Node.js, Express.js, C++, C, Hardware, Git, Agile, SPI, Embedded System, User Interface, UART, I2C, MicroPython, PCB, Tkinter, Data Collection, DAC, DMA, Assembly, AI, Website, OOP, CAD, Machine Learning, JSON, Verilog, Signals, Matplotlib, Numpy, AWS, Golang, Startup
