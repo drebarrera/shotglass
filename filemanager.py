@@ -45,7 +45,7 @@ def makedir(path):
 def startfile(path):
     if sys.platform == "win32":
         try:
-            subprocess.call(["vscode.exe", path])
+            subprocess.call([r"C:\Users\dreba\AppData\Local\Programs\Microsoft VS Code\Code.exe", path])
         except Exception:
             subprocess.Popen(["notepad.exe", path])
     elif sys.platform == "darwin":

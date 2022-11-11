@@ -373,14 +373,14 @@ class Resume:
             print('Certification/accomplishment deleted.')
         print()
 
-    def update_skills(self, relevance=dict()):
+    def update_skills(self, relevance=dict(), update_json=True):
         skill_list = dict()
         for instance in self.employment + self.projects + self.special:
             for skill in instance['skills']:
                 if skill not in skill_list and skill in relevance:  skill_list[skill] = relevance[skill]
                 else: skill_list[skill] = 0
         self.skills = [k for k, v in sorted(skill_list.items(), key=lambda item: item[1], reverse=True)]
-        self.update_json()
+        if update_json: self.update_json()
 
     def check_skills(self, synonyms):
         for employment in self.employment:
@@ -392,8 +392,8 @@ class Resume:
                 if not key_in_str(skill, (' ').join(project['description']), synonyms):
                     print("Suggestion: Update the Resume projects to include skill '" + skill + "' in the description for", project['name'] + '.')
 
-    def build_resume(self, load=True):
-        self.update_skills()
+    def build_resume(self, load=True, update_json=True, update_skills=True):
+        if update_skills: self.update_skills(update_json=update_json)
         resume = self.name.upper() + '\n'
         if self.title: resume += self.title + '\n'
         resume += ('Phone: {}\nEmail: {}\nLocation: {}\n\n').format(self.phone, self.email, self.location)
@@ -411,7 +411,7 @@ class Resume:
             if len(employment['description']) > 1: 
                 for description in employment['description']: resume += ('- {}\n').format(description)
             else: resume += employment['description'][0]
-        resume += '\nPROJECTS'
+        resume += '\nRECENT PROJECTS'
         project_list = [self.projects[date['ind']] for date in str_to_date([project['end'] if project['end'].lower() != 'current' else '3000' for project in self.projects], secondary_order=[len(project['skills']) for project in self.projects])]
         for project in project_list: 
             resume += ('\n{} ({})\n{} - {}\n').format(project['name'], project['association'], project['start'], project['end'])
@@ -421,7 +421,7 @@ class Resume:
         special_list = [self.special[date['ind']] for date in str_to_date([special['date'] if special['date'].lower() != 'current' else '3000' for special in self.special], secondary_order=[len(special['skills']) for special in self.special])]
         if len(special_list) > 0: resume += '\nCERTIFICATIONS/ACCOMPLISHMENTS\n'
         if len(special_list) > 0: resume += (' \u2022 ').join([('{} ({})').format(special['name'], special['date']) for special in special_list]) + '\n'
-        resume += '\nSKILLS\n'
+        resume += '\nRELEVANT SKILLS\n'
         resume += (', ').join(self.skills)
         f = open(r_path(file.getcwd(), self.info_path, 'resume', 'resume.txt'), 'w')
         f.write(resume)

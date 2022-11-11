@@ -352,7 +352,7 @@
         {
             "name": "Udemy Golang Course Certification",
             "date": "July 2022",
-            "bypass_filter": false,
+            "bypass_filter": true,
             "skills": [
                 "Golang"
             ]
@@ -363,6 +363,22 @@
             "bypass_filter": false,
             "skills": [
                 "Startup"
+            ]
+        },
+        {
+            "name": "MSHA 24-Hour Training Certification",
+            "date": "May 2020",
+            "bypass_filter": false,
+            "skills": [
+                "MSHA"
+            ]
+        },
+        {
+            "name": "Trained in ASTM Drafting Standards",
+            "date": "2018",
+            "bypass_filter": false,
+            "skills": [
+                "CAD"
             ]
         }
     ],

@@ -1,6 +1,7 @@
 from utility import *
 import resume as r
 import re
+import copy
 
 class Candidate:
     def __init__(self, _firstname, _lastname):
@@ -162,7 +163,7 @@ class Candidate:
                     'edit special': ('resume.edit_special()', 'change certifications/accomplishments to be stated on the resume'),
                     'delete special': ('resume.delete_special()', 'delete a certification/accomplishment from the resume'),
                     'build master': ('resume.build_resume()', 'generate master resume text file'),
-                    'build custom': ('self.build_resume(self.title_keys())', 'generate a resume for a specific title'),
+                    'build custom': ('self.build_custom(self.title_keys())', 'generate a resume for a specific title'),
                     'analyze': ('self.analyze_resume()','analyze resume for spelling, grammar, and content suggestions'),
                     'done': ('', 'return to the Candidate command line')
                     }
@@ -187,8 +188,61 @@ class Candidate:
             exec(commands[cmd][0], globals(), _locals)
         print('Returning to Candidate command line.\n')
 
-    def build_resume(self, keywords):
-        pass
+    def rank_items(self, items, key_ranks):
+        synonyms = self.synonyms()
+        item_index = {ind: 0 for ind in range(len(items))}
+        for ind in range(len(items)):
+            skills = items[ind]['skills']
+            for skill in skills:
+                if skill in synonyms:
+                    for s in synonyms[skill]:
+                        if s in key_ranks:
+                            item_index[ind] += key_ranks[s]
+                            break
+                else:
+                    if skill in key_ranks:
+                        item_index[ind] += key_ranks[skill]
+        return item_index
+
+    def build_custom(self, title_keys, key_ranking=None):
+        if title_keys == None: return
+        resume = copy.deepcopy(self.Resume)
+        resume.title = (' ').join([w[0].upper() + w[1:] for w in title_keys[0].split(' ')])
+        resume.education = [resume.education[date['ind']] for date in str_to_date([education['date'] if education['date'].lower() != 'current' else '3000' for education in resume.education])][:3]
+        key_ranks = key_ranking if key_ranking != None else {k: 1 for k in title_keys[1]}
+        employment = [resume.employment[date['ind']] for date in str_to_date([employment['end'] if employment['end'].lower() != 'current' else '3000' for employment in resume.employment], secondary_order=[len(employment['skills']) for employment in resume.employment])]
+        delete_index = sorted([x[0] for x in sorted(self.rank_items(employment, key_ranks).items(), key=lambda item: item[1], reverse=True) if x[0] != 0][2:])
+        offset = 0
+        for ind in delete_index:
+            del employment[ind - offset]
+            offset += 1
+        resume.employment = employment
+        projects = [resume.projects[date['ind']] for date in str_to_date([project['end'] if project['end'].lower() != 'current' else '3000' for project in resume.projects], secondary_order=[len(project['skills']) for project in resume.projects])]
+        delete_index = sorted([x[0] for x in sorted(self.rank_items(projects, key_ranks).items(), key=lambda item: item[1], reverse=True)][3:])
+        offset = 0
+        for ind in delete_index:
+            del projects[ind - offset]
+            offset += 1
+        resume.projects = projects
+        special = [resume.special[date['ind']] for date in str_to_date([special['date'] if special['date'].lower() != 'current' else '3000' for special in resume.special], secondary_order=[len(special['skills']) for special in resume.special])]
+        delete_index = sorted([x[0] for x in sorted(self.rank_items(special, key_ranks).items(), key=lambda item: item[1], reverse=True) if x[1] == 0])
+        offset = 0
+        for ind in delete_index:
+            if special[ind - offset]['bypass_filter'] == False:
+                del special[ind - offset]
+                offset += 1
+        resume.special = special
+        synonyms, skills = self.synonyms(), set()
+        for k,v in sorted(key_ranks.items(), key=lambda item: item[1], reverse=True):
+            print(k,v)
+            if '/' in k:
+                for s in k.split('/'):
+                    if s in resume.skills:
+                        skills.add(s)
+                        break
+            elif k in resume.skills: skills.add(k)
+        resume.skills = list(skills)
+        resume.build_resume(update_json=False, update_skills=False)
 
     def analyze_resume(self):
         resume = self.Resume
@@ -253,16 +307,16 @@ class Candidate:
                 print("Suggestion: Update the Resume to include candidate keyword '" + k + "'.")
 
     def title_keys(self):
-        print("Choose a title: " + (', ').join([title for title in self.titles]))
+        print("Choose a title: " + (', ').join([title for title in self.get_titles()]))
         res = input(">> ")
-        if res != '' and res not in self.titles:
-            comp = closest(res, self.titles)
+        if res != '' and res not in self.get_titles():
+            comp = closest(res, self.get_titles())
             if comp != None:
                 res = input("Unknown command. Did you mean '" + comp + "' (y/n)? >> ")
-                if res != 'y': print(); return []
+                if res != 'y': print(); return None
                 res = comp
-            else: print("Unknown title. Try again.\n"); return []
-        return self.titles[res]
+            else: print("Unknown title. Try again.\n"); return None
+        return (res, self.titles[self.get_titles()[res]])
 
     def list_title(self, title):
         if title.lower() not in self.titles: print('[!!!] ERR:', title, 'not in job title list for candidate', self.get_name, '.'); return

@@ -87,7 +87,11 @@ class System:
             if _fullname != None: print('[!!!] ERR: Name assignment error.'); return None
             candidate.build_dir()
             print('Candidate', candidate.get_name(), 'created.\n')
-        self.candidates.append(candidate)
+        c_exists = False
+        for ci in self.candidates:
+            if ci.firstname == candidate.firstname and ci.lastname == candidate.lastname:
+                c_exists = True
+        if not c_exists: self.candidates.append(candidate)
         return candidate
 
     def new_Candidate(self, _firstname, _lastname):
@@ -112,9 +116,9 @@ class System:
 
     def find_Candidate(self, _firstname, _lastname):
         candidate = None
-        for c in self.candidates:
-            if c.firstname == _firstname and c.lastname == _lastname:
-                candidate = c
+        for ci in self.candidates:
+            if ci.firstname == _firstname and ci.lastname == _lastname:
+                candidate = ci
         if candidate == None and not self.candidate_exists(_firstname, _lastname):
             comp = closest(_firstname + ' ' + _lastname, [c.firstname + ' ' + c.lastname for c in self.candidates])
             if comp != None:
