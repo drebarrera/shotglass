@@ -1,5 +1,4 @@
 ANDRES BARRERA
-Software Engineer
 Phone: +1(210) 585-6270
 Email: drebarrera@yahoo.com
 Location: Austin, Texas, United States
@@ -39,11 +38,28 @@ June 2016 - August 2021
 - Consulted the family-owned practice on software solutions for graphic, media, and UI/UX challenges.
 - Developed a HTML data scraping Selenium VBA script in partnership with marketing company Aesthetic Brand Marketing. Successfully transfered HTML material from the Texas Facial Plastic Surgery and ENT's DermPro website to Shopify.
 
+Engineering Intern
+Leak Location Services, Inc. | San Antonio, Texas, USA
+June 2020 - August 2020
+- Investigated methods to identify hazardous leaks in industrial liners using high-impedance electrical systems. Coordinated with contractors and clients on industrial worksites.
+- Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python, Computer-Aided Design, and MATLAB.
+
 RECENT PROJECTS
+Repeat Rover (Senior Design Team Project)
+May 2022 - December 2022
+- Served as the team leader on a team developing a flexible remote-programmable vehicle for resource delivery in repeated process environments.
+- Developed embedded system components such as vehicle drive and wheel speed sensing with CAD-designed hardware, a custom designed PCB/electrical, machine learning, and C software.
+- Built the project website and controller interfaces using my custom-developed Python to UI compiler (WebGen), HTML/CSS, JavaScript, and Node.js.
+
 Shotglass (Independent)
 October 2022 - November 2022
 - Independently developed a Python application to find user-curated jobs with respectful data scraping, while producing job-specific resume and cover letters.
 - Shotglass collects job post HTML data using Selenium Python and analyzes user resumes with an intuitive command line interface, JSON-formatted data storage, and hassle-free data processing.
+
+LogicSim (Independent)
+April 2022 - May 2022
+- Independently developed an application that provides an object-oriented alternative to hardware description languages such as Verilog by using Python classes to create logic systems.
+- LogicSim was created to aid in ASIC system logic verification in a fast and efficient way, using Matplotlib/Numpy to process and graph signals.
 
 WebGen - Python to UI Compiler (Independent)
 August 2021 - March 2022
@@ -56,8 +72,40 @@ February 2022 - February 2022
 - Independently designed a website for Alpen Aerial client-company communication with my custom object-oriented Python to UI compiler, WebGen.
 - Developed a clean and beautiful HTML/CSS frontend with a JavaScript/PHP backend, giving both clients and contractors access to project-specific data.
 
+OrgAI (Independent)
+January 2022 - January 2022
+- Independently developed a Python Artificial Intelligence program, which suggests organizations at Purdue University based upon keywords and iterative learning.
+- Collected HTML data and processed language from Purdue's Organization Directory in real time with Selenium Python browser automation.
+
+Digital WAV Player Embedded System (Microprocessor Systems Team Project)
+November 2021 - December 2021
+- Worked with a team to build a digital .wav file player embedded system, capable of playing 8-bit and 16-bit audio files with C/Assembly software.
+- The WAV Player features a TFT LCD for frontend audio control (music selection from a directory and play/pause/next song), on-board SD card storage, and an audio jack.
+- Soldered hardware on a custom PCB and programmed access to the STM32 microchip's SPI, DAC, DMA and GPIO features in C.
+
+DermPro Website Data Collection Program (Texas Facial Plastic Surgery and ENT)
+June 2021 - July 2021
+- Partnered with Aethetic Brand Marketing to assist in the redesign of RejuveMD's Shopify store.
+- Developed a Excel VBA program using Selenium to collect HTML data from 55 pages of DermPro UI content.
+
+Public Directory Data Collection Script (Wyd Student Startup)
+September 2020 - October 2020
+- Wrote software using Selenium and Excel VBA to data-scrape HTML content from Purdue University's public student directory as market research for a student startup company.
+- Used Python to process demographic data collected from over 35,000 students.
+
+Geoamperic Interpreter (Leak Location Services, Inc.)
+July 2020 - August 2020
+- Designed an embedded system to measure and model the surface voltage of in-soil current injection and correlate data with a GPS receiver using Python/MicroPython, Computer-Aided Design, and MATLAB.
+- The Geoamperic Interpreter uses a custom PCB shield on a Raspberry Pi microcontroller and communicates with LCD display, GPS, and TI INA219 current sensor peripherals using UART, SPI, and I2C.
+- Python is used to process data and generate a Tkinter graphical user interface.
+
+GeoPlot-MATLAB (Leak Location Services, Inc.)
+July 2020 - July 2020
+- Developed software to plot large project worksites using iPhone GPS to collect data and Python/MATLAB to plot in 3D.
+- Used GeoPlot to produce client deliverables and keep track of the location of industrial liner defects.
+
 CERTIFICATIONS/ACCOMPLISHMENTS
-AWS Technical Essentials Certification (September 2022) � Udemy Golang Course Certification (July 2022)
+AWS Technical Essentials Certification (September 2022) • AGMA Fundamentals of Gearing Certification (July 2022) • Udemy Golang Course Certification (July 2022) • MSHA 24-Hour Training Certification (May 2020) • Purdue Foundry Firestarter Startup Training Program (March 2020) • Trained in ASTM Drafting Standards (2018)
 
 RELEVANT SKILLS
-C, Website, C++, HTML, Backend, Selenium, Express.js, Git, Python, OOP, Golang, JavaScript, CSS, AWS, VBA, PHP, Node.js, JSON, Frontend
+Computer-Aided Design, Python, Embedded Systems, MATLAB, Electrical, GPS, VBA, Selenium, Data, HTML, UI, Graphic Design, Website Design, Backend, JavaScript, CSS, Frontend, Wix Velo, PHP, Node.js, Express.js, C++, C, Hardware, Git, Agile, SPI, Embedded System, User Interface, UART, I2C, MicroPython, PCB, Tkinter, Data Collection, DAC, DMA, Assembly, AI, Website, OOP, CAD, Machine Learning, JSON, Verilog, Signals, Matplotlib, Numpy, AWS, Golang, Startup, MSHA

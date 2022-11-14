@@ -232,7 +232,7 @@ class Candidate:
                 del special[ind - offset]
                 offset += 1
         resume.special = special
-        synonyms, skills = self.synonyms(), set()
+        skills = self.synonyms()
         for k,v in sorted(key_ranks.items(), key=lambda item: item[1], reverse=True):
             print(k,v)
             if '/' in k:
